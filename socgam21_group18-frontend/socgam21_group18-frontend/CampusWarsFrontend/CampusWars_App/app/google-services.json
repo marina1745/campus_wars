@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "813854027334",
+    "project_id": "social-gaming-2021",
+    "storage_bucket": "social-gaming-2021.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:813854027334:android:f7f691330a1db7e5322447",
+        "android_client_info": {
+          "package_name": "com.socgame.campuswars_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "813854027334-p6taj8p03nc9e5b9482j47neo66ns708.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC9pSSqDAnHNeXftODpTuQ7aEY6iaLCiYA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "813854027334-p6taj8p03nc9e5b9482j47neo66ns708.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".ui.ResultActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+
+        android:background="@color/background"
+        android:elevation="20sp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/title"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Results"
+
+            android:textColor="@color/highlight"
+            android:textSize="25sp"
+
+            android:textStyle="bold" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <!--
+    This must be set to visible in code
+    -->
+    <LinearLayout
+        android:id="@+id/resultWrapper"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/action_bar"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal"
+        >
+
+        <Space
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:layout_weight="0.2"
+            />
+
+
+        <!--
+        These values need to be changed in code
+        -->
+        <ImageView
+        android:id="@+id/resultImg"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.4"
+
+        app:srcCompat="@drawable/img_winning"
+
+        android:layout_weight="2"
+        />
+
+        <TextView
+            android:id="@+id/resultTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textColor="@color/text"
+            android:textStyle="bold"
+            android:autoSizeTextType="uniform"
+
+            android:text="You Won!"
+        />
+
+        <Space
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:layout_weight="0.2"
+            />
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_rounded"
+            android:elevation="10sp"
+
+            android:layout_weight="0.2"
+
+            android:gravity="center"
+            android:padding="20sp"
+            >
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+
+                    android:autoSizeTextType="uniform"
+                    android:drawablePadding="10sp"
+                    android:text="Your Opponent:"
+
+                    android:textStyle="bold"
+                    android:textColor="@color/text" />
+
+                <TextView
+                    android:id="@+id/enemyName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+
+                    android:autoSizeTextType="uniform"
+                    android:drawablePadding="10sp"
+                    android:text="Test Name"
+
+                    android:textColor="@color/text" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+
+                android:autoSizeTextType="uniform"
+                android:drawablePadding="10sp"
+                android:text="Opponent Team:"
+
+                android:textStyle="bold"
+                android:textColor="@color/text" />
+
+            <TextView
+                android:id="@+id/enemyTeam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+
+                android:autoSizeTextType="uniform"
+                android:drawablePadding="10sp"
+                android:text="Test Team"
+
+                android:textColor="@color/text" />
+
+            </TableRow>
+
+        </TableLayout>
+
+        <Space
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:layout_weight="0.2"
+            />
+
+        <Button
+            android:id="@+id/resultButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_rounded_highlight"
+            android:text="Continue"
+            android:textColor="@color/textInverted"
+            />
+
+        <Space
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:layout_weight="0.2"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/result_loading_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:autoSizeTextType="uniform"
+        android:drawableLeft="@drawable/ic_sand_clock"
+        android:drawablePadding="10sp"
+        android:text="Evaluating Results"
+
+        android:textColor="@color/text"
+
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/action_bar" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,28 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.CampusWars_App" parent="Theme.AppCompat">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/background</item>
+        <item name="colorPrimaryVariant">@color/lightAccent</item>
+        <item name="colorOnPrimary">@color/text</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/highlight</item>
+        <item name="colorSecondaryVariant">@color/darkAccent</item>
+        <item name="colorOnSecondary">@color/textInverted</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+
+        <item name="android:actionBarStyle">@style/MyActionBar</item>
+    </style>
+
+    <!-- WHY WONT ANY OF THIS WORK? -->
+    <style name="MyActionBar" parent="@android:style/Widget.Holo.Light.ActionBar">
+        <item name="colorPrimary">@color/lightAccent</item>
+        <item name="colorSecondaryVariant">@color/lightAccent</item>
+        <item name="colorOnSecondary">@color/textInverted</item>
+        <item name="android:background">@color/highlight</item>
+        <item name="android:actionBarItemBackground">@color/lightAccent</item>
+        <item name="android:windowActionBar">false</item>
+    </style>
+</resources>

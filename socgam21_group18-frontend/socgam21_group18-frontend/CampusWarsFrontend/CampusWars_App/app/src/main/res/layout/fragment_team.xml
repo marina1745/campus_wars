@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.TeamFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+
+        android:layout_marginLeft="7sp"
+        android:layout_marginRight="7sp"
+        >
+
+        <TextView
+            android:id="@+id/teamName"
+            android:layout_width="match_parent"
+
+            android:layout_height="45sp"
+            android:layout_marginTop="20sp"
+
+            android:background="@drawable/button_rounded"
+            android:drawableLeft="@drawable/ic_group_icon"
+
+            android:elevation="15sp"
+            android:paddingLeft="10sp"
+
+            android:text="Not in a Team Yet"
+            android:textColor="@color/text"
+            android:textStyle="bold"
+
+            android:autoSizeMaxTextSize="30sp"
+            android:autoSizeTextType="uniform"
+            android:gravity="center"
+            android:textAllCaps="true"
+            />
+
+        <Space
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:layout_weight="0.2" >
+        </Space>
+
+        <TableLayout
+            android:id="@+id/tableLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_gravity="center"
+            android:gravity="center"
+
+            android:stretchColumns="0,1"
+            android:background="@drawable/button_rounded"
+            android:elevation="10sp"
+            android:layout_weight="0.2"
+            >
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:minHeight="10sp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:text="Current Members:"
+                    android:textStyle="bold"
+
+                    android:gravity="center"
+                    android:textColor="@color/text"
+                    />
+
+                <TextView
+                    android:id="@+id/textCurrentMembers"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="1 People"
+
+                    android:gravity="center"
+                    android:textColor="@color/text"
+                    />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:minHeight="10sp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:gravity="center"
+                    android:text="Current Control:"
+
+                    android:textColor="@color/text"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textCurrentControl"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="0%"
+
+                    android:gravity="center"
+                    android:textColor="@color/text"
+                    />
+            </TableRow>
+        </TableLayout>
+
+        <Space
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:layout_weight="0.2" >
+        </Space>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+
+            android:layout_weight="4"
+            android:orientation="vertical"
+
+            android:background="@drawable/button_rounded"
+            android:elevation="10sp"
+
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:text="Team members:"
+                android:textSize="20sp"
+                android:textColor="@color/text"
+
+                android:background="@drawable/button_rounded"
+                android:elevation="1sp"
+
+                android:gravity="center"
+                android:textStyle="bold"
+            />
+            <ListView
+                android:id="@+id/memberList"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:padding="20sp"
+                android:layout_weight="4"
+
+
+                android:textColor="@color/text"
+
+                android:divider="@color/darkAccent"
+                android:dividerHeight="1sp"
+
+
+                android:smoothScrollbar="true"
+                android:scrollbarAlwaysDrawVerticalTrack="true"
+                android:scrollbarStyle="insideInset"
+                android:scrollbars="vertical"
+                android:scrollbarTrackVertical="@color/mediumAccent"
+                android:scrollbarThumbVertical="@drawable/button_rounded_highlight"
+                android:fadeScrollbars="true"
+                android:scrollbarSize="7sp"
+            />
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:layout_weight="0.2" >
+        </Space>
+
+        <!--
+        <Button
+            android:id="@+id/raidButton"
+            android:layout_width="150sp"
+            android:layout_height="wrap_content"
+
+            android:layout_marginBottom="0sp"
+
+            android:layout_weight="0.04"
+
+            android:background="@drawable/button_rounded_highlight"
+            android:elevation="15sp"
+            android:text="Rally Team"
+            android:textColor="@color/textInverted" />
+        -->
+
+        <Space
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:layout_weight="0.1" >
+        </Space>
+
+
+    </LinearLayout>
+
+</FrameLayout>

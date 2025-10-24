@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@color/background"
+tools:context=".ui.RegisterActivity">
+
+<androidx.appcompat.widget.Toolbar
+    android:id="@+id/action_bar"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+
+    android:background="@color/background"
+    android:elevation="20sp"
+
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <TextView
+        android:id="@+id/textView"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="@string/title_register"
+
+        android:textColor="@color/highlight"
+        android:textSize="25sp"
+
+        android:textStyle="bold" />
+</androidx.appcompat.widget.Toolbar>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_gravity="center_horizontal"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/action_bar">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="224dp"
+        android:layout_height="145dp"
+
+        android:layout_marginTop="30sp"
+        android:layout_marginBottom="40sp"
+
+        app:srcCompat="@mipmap/ic_launcher_icon" />
+
+    <!--
+    <Button
+        android:id="@+id/incorrectInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginBottom="10sp"
+
+        android:background="@null"
+        android:text="Incorrect TUM info"
+        android:textAlignment="center"
+        android:textColor="@color/darkAccent" />
+    -->
+
+    <EditText
+        android:id="@+id/editTextTumId"
+        android:layout_width="wrap_content"
+        android:layout_height="45sp"
+
+        android:layout_marginBottom="20sp"
+        android:ems="15"
+
+        android:hint="TUM ID - z.B. &quot;go42tum&quot;"
+        android:textColorHint="@color/darkAccent"
+
+        android:background="@drawable/button_rounded"
+        android:textColor="@color/text"
+        android:elevation="10sp"
+
+        android:drawableLeft="@drawable/ic_id_icon"
+        android:paddingLeft="10sp"
+        android:drawablePadding="10sp"
+        />
+
+    <EditText
+        android:id="@+id/editTextEmailAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="45sp"
+
+        android:layout_marginBottom="20sp"
+        android:ems="15"
+
+        android:inputType="textEmailAddress"
+        android:hint="Max.Mustmann@EMail.com"
+        android:textColorHint="@color/darkAccent"
+
+        android:background="@drawable/button_rounded"
+        android:textColor="@color/text"
+        android:elevation="10sp"
+
+        android:drawableLeft="@drawable/ic_email"
+        android:paddingLeft="10sp"
+        android:drawablePadding="10sp"
+        />
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="45sp"
+
+        android:layout_marginBottom="20sp"
+        android:ems="15"
+
+        android:inputType="textPassword"
+        android:hint="Password"
+        android:textColorHint="@color/darkAccent"
+
+        android:background="@drawable/button_rounded"
+        android:textColor="@color/text"
+        android:elevation="10sp"
+
+        android:drawableLeft="@drawable/ic_lock"
+        android:paddingLeft="10sp"
+        android:drawablePadding="10sp"
+        />
+
+    <EditText
+        android:id="@+id/editTextConfirmPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="45sp"
+
+        android:layout_marginBottom="50sp"
+        android:ems="15"
+
+        android:inputType="textPassword"
+        android:hint="Confirm Password"
+        android:textColorHint="@color/darkAccent"
+
+        android:background="@drawable/button_rounded"
+        android:textColor="@color/text"
+        android:elevation="10sp"
+
+        android:drawableLeft="@drawable/ic_lock"
+        android:paddingLeft="10sp"
+        android:drawablePadding="10sp"
+        />
+
+
+    <Button
+        android:id="@+id/registerButton"
+        android:layout_width="150sp"
+        android:layout_height="wrap_content"
+
+        android:layout_marginBottom="40sp"
+
+        android:text="Register"
+
+        android:textColor="@color/textInverted"
+        android:background="@drawable/button_rounded_highlight"
+        android:elevation="15sp"/>
+</LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

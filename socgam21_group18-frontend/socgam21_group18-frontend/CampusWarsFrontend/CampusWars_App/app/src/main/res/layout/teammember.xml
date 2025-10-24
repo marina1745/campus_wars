@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/membername"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+
+    android:text="TEAMMEMBER"
+    android:textColor="@color/text"
+    android:autoSizeTextType="uniform"
+    android:autoSizeMaxTextSize="70sp"
+
+
+    android:drawableLeft="@drawable/ic_person_icon"
+    android:drawablePadding="10sp"
+
+    android:padding="15sp"
+    />
+<!--
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_person_icon"
+
+        android:layout_weight="0.5"
+    />
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+
+        android:layout_weight="0.5" >
+    </Space>
+
+</LinearLayout>
+-->

@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Campus Wars</string>
+
+    <string name="title_logIn">Log In</string>
+    <string name="title_register">Register</string>
+    <string name="title_area">Local Area</string>
+    <string name="title_quiz">Quiz</string>
+    <string name="title_team">Team</string>
+    <string name="title_territory">Territory</string>
+
+    <!-- These are auto generated, but I do not want to risk deleting them now -->
+    <string name="title_activity_test">ActivityTest</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

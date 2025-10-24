@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.TerritoryFragment">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+
+            android:layout_marginLeft="7sp"
+            android:layout_marginRight="7sp"
+            >
+
+            <TextView
+                android:id="@+id/lectureHall"
+                android:layout_width="match_parent"
+
+                android:layout_height="45sp"
+                android:layout_marginTop="20sp"
+
+                android:background="@drawable/button_rounded"
+                android:drawableLeft="@drawable/ic_territory"
+                android:paddingLeft="10sp"
+
+                android:elevation="15sp"
+
+                android:text="Not in a Lecture Hall"
+                android:textColor="@color/text"
+                android:textStyle="bold"
+
+                android:autoSizeMaxTextSize="30sp"
+                android:autoSizeTextType="uniform"
+                android:gravity="center"
+                />
+
+            <Space
+                android:layout_width="1dp"
+                android:layout_height="0dp"
+                android:layout_weight="0.4" >
+            </Space>
+
+            <TextView
+                android:id="@+id/timeoutID"
+
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+
+                android:autoSizeTextType="uniform"
+                android:gravity="center_horizontal"
+                android:textColor="@color/warning"
+                android:textStyle="bold"
+
+                android:text="You can currently not participate"
+
+                android:layout_weight="0.5"
+
+                android:visibility="invisible"
+            />
+
+            <Space
+                android:layout_width="1dp"
+                android:layout_height="0dp"
+                android:layout_weight="0.6" >
+            </Space>
+
+            <TableLayout
+                android:id="@+id/tableLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_gravity="center"
+                android:gravity="center"
+
+                android:stretchColumns="0"
+                android:shrinkColumns="1"
+                android:background="@drawable/button_rounded"
+                android:elevation="15sp"
+                android:layout_weight="1"
+                >
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:minHeight="70sp"
+                    >
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+                        android:text="Current Owner:"
+                        android:textStyle="bold"
+
+                        android:autoSizeTextType="uniform"
+                        android:autoSizeMaxTextSize="20sp"
+
+                        android:layout_margin="5sp"
+                        android:gravity="center"
+                        android:textColor="@color/text"
+                        />
+
+                    <TextView
+                        android:id="@+id/textCurrentOwner"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+                        android:layout_margin="5sp"
+                        android:autoSizeMaxTextSize="20sp"
+
+                        android:autoSizeTextType="uniform"
+                        android:gravity="left"
+                        android:textColor="@color/text" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:minHeight="70sp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+                        android:text="Current Lecture:"
+                        android:textStyle="bold"
+
+                        android:autoSizeTextType="uniform"
+                        android:autoSizeMaxTextSize="20sp"
+
+                        android:layout_margin="5sp"
+                        android:gravity="center"
+                        android:textColor="@color/text"
+                        />
+
+                    <TextView
+                        android:id="@+id/textCurrentLecture"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+                        android:layout_margin="5sp"
+                        android:autoSizeMaxTextSize="20sp"
+
+                        android:autoSizeTextType="uniform"
+                        android:gravity="left"
+                        android:textColor="@color/text" />
+                </TableRow>
+
+
+
+            </TableLayout>
+
+            <Space
+                android:layout_width="1dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" >
+            </Space>
+
+
+            <Button
+                android:id="@+id/challengeButton"
+                android:layout_width="150sp"
+                android:layout_height="wrap_content"
+
+                android:layout_marginBottom="20sp"
+                android:background="@drawable/button_rounded_highlight"
+
+                android:elevation="15sp"
+
+                android:gravity="center"
+                android:text="Challenge Opponent"
+                android:textColor="@color/textInverted" />
+
+            <Button
+                android:id="@+id/raidButton"
+                android:layout_width="150sp"
+                android:layout_height="wrap_content"
+
+                android:layout_marginBottom="20sp"
+
+                android:background="@drawable/button_rounded_highlight"
+
+                android:elevation="15sp"
+                android:text="Rally Team"
+                android:textColor="@color/textInverted" />
+
+            <Space
+                android:layout_width="1dp"
+                android:layout_height="0dp"
+                android:layout_weight="0.5" >
+            </Space>
+
+
+        </LinearLayout>
+
+</FrameLayout>

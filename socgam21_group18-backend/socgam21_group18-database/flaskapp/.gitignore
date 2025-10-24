@@ -1,0 +1,5 @@
+# top level for all other images
+# most stuff is in app/.gitignore
+.idea
+*.assets
+sandbox/*

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="background">#FFFFFF</color>
+    <color name="lightAccent">#F6F6F6</color>
+    <color name="darkAccent">#838383</color>
+    <color name="highlight">#4275A8</color>
+    <color name="text">#000000</color>
+    <color name="textInverted">#FFFFFF</color>
+    <color name="shadow">#000000</color>
+    <color name="mediumAccent">#d9d9d9</color>
+    <color name="warning">#FF0000</color>
+</resources>

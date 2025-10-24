@@ -1,0 +1,2 @@
+rootProject.name = "CampusWars_App"
+include ':app'
