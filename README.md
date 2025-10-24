@@ -43,10 +43,7 @@ Through playful competition, the game encourages collaboration, academic engagem
 
 ---
 
-## 👩‍💻 Authors
-Developed by **Marina Weber** and collaborators as a university project at **TUM**.
 
----
 
 ## 📄 License
 This project is provided for educational and non-commercial purposes.
